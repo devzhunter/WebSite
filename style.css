@@ -1,0 +1,2409 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+:focus {
+    outline: 0;
+}
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+
+[hidden] {
+    display: none;
+}
+
+
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+
+a:focus {
+    outline: thin dotted;
+}
+
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+
+
+figure {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+
+
+
+
+button,
+input {
+    line-height: normal;
+}
+
+
+button,
+select {
+    text-transform: none;
+}
+
+
+
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+
+
+
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.wrapper{
+    
+
+    margin: 0 auto;
+}
+.header{
+    position: absolute;
+    background-color: #333333;
+    width: 100%;
+    height: 112px;
+}
+.logopick
+{
+position: absolute;
+left: 16.15%;
+right: 79.17%;
+top: 17.86%;
+bottom: 32.14%;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.time
+{
+    position: absolute;
+    font-family: "Raleway"; 
+    width: 11.25%;
+    height: 20px;
+    color: white;
+left: 27.6%;
+right: 61.15%;
+top: 33.93%;
+bottom: 48.21%;
+
+
+
+}
+.phone
+{
+
+
+position: absolute;
+left: 44.79%;
+right: 48.12%;
+top: 22.32%;
+bottom: 59.82%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 20px;
+color: #FFFFFF;
+
+
+}
+
+.calling
+{
+ /* Заказать звонок */
+
+position: absolute;
+left: 44.84%;
+right: 48.59%;
+top: 49.11%;
+bottom: 36.61%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+text-decoration-line: underline;
+
+/* Red */
+color: #FC573B;
+
+
+}
+.heartblock {
+  
+    position: absolute;
+    width: 5%;
+    height: 96px;
+    cursor: pointer;
+    left: 55.62%;
+    right: 39.38%;
+    top: 0%;
+    bottom: 14.29%;
+    background: #3B3B3B;
+
+
+
+}
+.heart
+{
+    width: 32px;
+    height: 32px;
+    margin-top: 31.5px;
+    margin-left: 31.5px;
+}
+.number1
+{
+    margin-left: -18px;
+    margin-top: 5px;
+}
+.heartblock:hover {
+    background-color: #F05A00;
+  }
+
+.comparisonblock
+{
+    background-color: #3B3B3B;
+position: absolute;
+left: 60.68%;
+right: 34.32%;
+top: 0%;
+bottom: 14.29%;
+
+
+}
+.comparisonblock:hover {
+    background-color: #F05A00;
+  }
+.userblock
+{
+position: absolute;
+left: 65.73%;
+right: 29.27%;
+top: 0%;
+bottom: 14.29%;
+background-color: #3B3B3B;
+}
+.userblock:hover {
+    background-color: #F05A00;
+  }
+  .shoppingblock
+  {
+position: absolute;
+left: 70.78%;
+right: 24.22%;
+top: 0%;
+bottom: 14.29%;
+      background-color: #3B3B3B;
+     
+  }
+  .shoppingblock:hover {
+    background-color: #F05A00;
+  }
+.allsum
+{
+
+position: absolute;
+left: 76.61%;
+right: 16.15%;
+top: 23.21%;
+bottom: 58.93%;
+
+/* Техт */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+}
+.sell
+{
+
+position: absolute;
+left: 76.61%;
+right: 20.47%;
+top: 44.64%;
+bottom: 37.5%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+}
+.menuuu
+{
+    position: absolute;
+    background-color: #000000;
+width: 100%;
+height: 92px;
+bottom: 78.2%;
+
+
+
+
+}
+.catalog-button {
+    background-color: black;
+    color: white;
+    border: 2px solid #F05A00;
+    border-radius: 5px;
+   width: 200px;
+   height: 48px;
+position: absolute;
+left: 16.56%;
+right: 73.02%;
+top: 25%;
+bottom: -60.71%;
+
+
+  }
+  .burger {
+    position: fixed;
+    display: inline-block;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    margin-right: 3%;
+    position: relative;
+    top: -4px;
+  }
+
+  .burger::before,
+  .burger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 4px;
+  }
+
+  .burger::before,
+  .burger::after {
+    width: 80%;
+    margin-bottom: 4px;
+    background-color: white;
+  }
+
+  .burger::after {
+    width: 60%;
+    margin-bottom: 0;
+    background-color: white;
+  }
+  .catalog-button:hover {
+    background-color: #F05A00;
+  }
+  .About
+  {
+ position: absolute;
+width: 92px;
+height: 20px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+left: 30%;
+top: 43%;
+
+color: #FFFFFF;
+  }
+  .ac
+  {
+     position: absolute;
+    width: 97px;
+    height: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+left: 45%;
+top: 43%;
+color: #FFFFFF;
+
+
+
+  
+  }
+  .hot
+  {
+     position: absolute;
+width: 97px;
+height: 20px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+left: 54%;
+top: 43%;
+color: #FFFFFF;
+
+
+
+  }
+  .new
+  {
+
+    position: absolute;
+width: 67px;
+height: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+left: 38%;
+top: 43%;
+
+color: #FFFFFF;
+  }
+  .insta
+  {
+  
+
+position: absolute;
+left: 59.55%;
+right: 40.49%;
+top: 33.21%;
+bottom: -55.36%;
+
+
+  }
+   .vk
+  {
+
+position: absolute;
+left: 62.13%;
+right: 37.92%;
+top: 33.21%;
+bottom: -50.36%;
+
+
+  }
+  .face
+  {
+
+
+position: absolute;
+left: 65.4%;
+right: 35.34%;
+top: 33.21%;
+bottom: -55.36%;
+
+
+  }
+.search-container {
+
+position: absolute;
+left: 69.12%;
+right: 15.73%;
+top: 27.07%;
+bottom: -62.5%;
+
+
+border-radius: 5px;
+
+}
+
+.search-icon {
+  position: absolute;
+  top: 20%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 14px;
+}
+
+.search-input {
+  padding: 13px 32px 13px 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.baners
+{
+  position: absolute;
+    background-color: #212526;
+    width: 100%;
+    height: 512px;
+    top: 21.8%;
+    
+}
+.instrum
+{
+
+      /* баннер 1 */
+
+position: relative;
+width: 640px;
+height: 488px;
+left: 315px;
+top: 3px;
+
+
+}
+.text
+{
+position: relative;
+width: 579px;
+height: 96px;
+left: 342px;
+top: -450px;
+
+/* H1 */
+font-family: 'Prosto One';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+
+color: #FFFFFF;
+
+
+ 
+   
+}
+.stelka
+{
+    position: absolute;
+    background-color: #000000;
+    width: 58px;
+    height: 58px;
+    left: 315px;
+    top: 433px;
+
+}
+
+.strela
+{
+    margin-top: 30%;
+ margin-left: 20%;
+}
+.button {
+ 
+  
+  
+  position: absolute;
+  width: 210px;
+  height: 50px;
+  left: 350px;
+  top: 250px;
+  color: white;
+  background-color: #F05A00;
+  border-radius: 5px;
+  
+    
+  }
+  .stelka:hover {
+    background-color: #F05A00;
+  }
+
+  .secondin
+  {
+
+position: relative;
+width: 311px;
+height: 488px;
+left: 969px;
+top: -580px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.jpg);
+border-radius: 5px;
+
+  }
+  .stelkatwo
+{
+
+  position: absolute;
+  background-color: #000000;
+  width: 58px;
+  height: 58px;
+  left: 968px;
+  top: 434px;
+
+
+}
+.stelkatwo:hover {
+    background-color: #F05A00;
+  }
+ 
+.three
+{
+
+position: relative;
+width: 310px;
+height: 234px;
+left: 1300px;
+top: -1065px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.jpg);
+border-radius: 5px;
+
+}
+
+.stelkathree
+{
+  position: absolute;
+  background-color: #000000;
+  width: 58px;
+  height: 58px;
+  left: 1300px;
+  top: 183px;
+}
+.stelkathree:hover {
+    background-color: #F05A00;
+  }
+  .for
+  {
+
+position: relative;
+width: 310px;
+height: 234px;
+left: 1300px;
+top: -1050px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(.jpg);
+border-radius: 5px;
+
+  }
+  .stelkafor
+  {
+    position: absolute;
+    background-color: #000000;
+    width: 58px;
+    height: 58px;
+    left: 1300px;
+    top: 433px;
+  
+  }
+  .stelkafor:hover {
+    background-color: #F05A00;
+  }
+  .texttwo
+  {
+    /* Акции */
+
+position: absolute;
+width: 72px;
+height: 24px;
+left: 985px;
+top: 20px;
+
+font-family: 'Prosto One';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 24px;
+
+color: #ffffff;
+
+
+  }
+.textthree
+{
+
+
+position: absolute;
+width: 225px;
+height: 24px;
+left: 1316px;
+top: 20px;
+
+font-family: 'Prosto One';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 24px;
+color: #FFFFFF;
+
+
+}
+.textfor
+{
+  /* Акции на сверла */
+
+position: absolute;
+width: 191px;
+height: 24px;
+left: 1316px;
+top: 270px;
+
+
+font-family: 'Prosto One';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+}
+.Osnova
+{
+  /* Разделы */
+background-color: #ffffff;
+position: absolute;
+width: 1300px;
+height: 1340px;
+left: 310px;
+top: 792px;
+}
+.Malyar
+{
+/* Малярные товары */
+
+width: 314px;
+height: 32px;
+
+/* H2 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+/* identical to box height, or 107% */
+
+/* Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.Emal
+{
+background-color: #ffffff;
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 0px;
+top: 50px;
+
+border-radius: 5px;
+
+}
+.Condor
+{
+  /* Rectangle 20 */
+
+position: absolute;
+left: 15.48%;
+right: 16.13%;
+top: 11.76%;
+bottom: 34.12%;
+}
+.Lin
+{
+  /* Group 441 */
+
+position: absolute;
+width: 286px;
+height: 2px;
+left: 12px;
+top: 236px;
+
+
+}
+.Emall
+{
+  /* Эмаль Condor ПФ-115 жёлтая 1,8 кг */
+
+position: absolute;
+left: 3.87%;
+right: 21.94%;
+top: 74.12%;
+bottom: 14.12%;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+
+
+}
+.pitsot
+{
+  /* 500 ₽ */
+
+position: absolute;
+left: 4.19%;
+right: 78.71%;
+top: 89.41%;
+bottom: 3.53%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+text-align: center;
+
+/* Black */
+color: #000000;
+}
+.semsoot
+{
+  /* 720 ₽ */
+
+position: absolute;
+left: 24.52%;
+right: 62.26%;
+top: 90.59%;
+bottom: 3.53%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+text-align: center;
+text-decoration-line: line-through;
+
+/* Gray */
+color: #DEDBDB;
+
+
+}
+.novinka {
+ 
+position: absolute;
+left: 3.87%;
+right: 73.55%;
+top: 3.53%;
+bottom: 89.41%;
+
+
+}
+.checkmark {
+  color: green;
+position: absolute;
+width: 16px;
+height: 16px;
+left: 151px;
+top: 312px;
+}
+.vnal
+{
+  /* в наличии */
+
+position: absolute;
+left: 55.16%;
+right: 23.23%;
+top: 91.76%;
+bottom: 3.53%;
+
+/* Text mini */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+color: #126935;
+}
+.korzinka
+{
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 11px;
+top: 11px;
+
+}
+.obvodka
+{
+  /* Rectangle 1344 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 60px;
+height: 56px;
+left: 250px;
+top: 284px;
+
+
+border: 1px solid #F05A00;
+border-radius: 5px 0px;
+
+}
+.bar
+{
+
+
+position: absolute;
+left: 78.06%;
+right: 14.19%;
+top: 3.53%;
+bottom: 89.41%;
+}
+.serdce
+{
+  /* heart */
+
+position: absolute;
+left: 88.39%;
+right: 3.87%;
+top: 3.53%;
+bottom: 89.41%;
+
+}
+  .small-button {
+    /* кругляшок */
+position: absolute;
+width: 40px;
+height: 40px;
+left: 374px;
+top: 0px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    
+  }
+  
+  .small-button span {
+    transform: translateY(1px);
+  }
+  .small-buttonn {
+
+position: absolute;
+width: 40px;
+height: 40px;
+left: 430px;
+top: 1px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+    
+  }
+  
+  .small-buttonn span {
+    transform: translateY(1px);
+  }
+  .object
+  {
+    /* Component 6 */
+background-color: #ffffff;
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+border-radius: 5px;
+  }
+  .nojka
+  {
+    /* Component 9 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+  }
+  .podzakaz
+  {
+    /* в наличии */
+color: #F05A00;
+position: absolute;
+width: 64px;
+height: 16px;
+left: 171px;
+top: 312px;
+
+  }
+  .electro
+  {
+  position: absolute;
+    top: 0px;
+    left: 670px;
+width: 387px;
+height: 32px;
+
+/* H2 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+/* identical to box height, or 107% */
+
+/* Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .otvertka
+  {
+    /* Component 10 */
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+  }
+  .small
+  {
+    /* кругляшок */
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1120px;
+    top: 1px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        
+
+
+  }
+  .smalli
+  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1175px;
+    top: 1px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(202, 202, 202);
+        cursor: pointer;
+  }
+  .Spec
+  {
+    position: absolute;
+    top: 450px;
+    
+
+width: 217px;
+height: 32px;
+
+/* H2 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+/* identical to box height, or 107% */
+
+/* Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .kurtka
+  {
+
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: -990px;
+top: 450px;
+
+
+  }
+  .obvodkaa
+{
+
+
+box-sizing: border-box;
+
+position: relative;
+width: 60px;
+height: 56px;
+left: 250px;
+top: 284px;
+background-color: #F05A00;
+border-radius: 5px 0px;
+}
+.kaska
+{
+  
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+}
+.plosko
+{
+
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+}
+.vili
+{
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+}
+
+.smallthre
+{
+
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 270px;
+  top: 450px;
+      background-color: #dddddd;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      
+
+
+}
+.smallthree
+{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 325px;
+  top: 450px;
+      background-color: #dddddd;
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: rgb(202, 202, 202);
+      cursor: pointer;
+}
+.dacha
+  {
+    position: absolute;
+    top: 450px;
+    left: 665px;
+
+width: 288px;
+height: 32px;
+
+/* H2 */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+/* identical to box height, or 107% */
+
+/* Black */
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .smallfor
+  {
+    /* кругляшок */
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1000px;
+    top: 450px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        
+
+
+  }
+  .smallforr
+  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1055px;
+    top: 450px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(202, 202, 202);
+        cursor: pointer;
+  }
+  .sezn
+  {
+     position: absolute;
+    top: 900px;
+    left: 0px;
+
+width: 288px;
+height: 32px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+
+color: #000000;
+
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+  .chtoto
+  {
+
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: -990px;
+top: 450px;
+border-radius: 5px;
+
+  }
+  .lopata
+  {
+    
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+
+border-radius: 5px;
+
+  }
+  .otvertkaewe
+  {
+
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0;
+
+border-radius: 5px;
+
+  }
+  .pistol
+  {
+
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0;
+
+border-radius: 5px;
+
+  }
+  .in
+  {
+    position: absolute;
+    top: 900px;
+    left: 665px;
+
+width: 288px;
+height: 32px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+
+color: #000000;
+  }
+  .smallfive
+  {
+   
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 235px;
+    top: 900px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        
+
+
+  }
+  .smallfivee
+  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 980px;
+    top: 900px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(202, 202, 202);
+        cursor: pointer;
+  }
+  .smallsix
+  {
+   
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 930px;
+    top: 900px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        
+
+
+  }
+  .smallsixx
+  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 290px;
+    top: 900px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(202, 202, 202);
+        cursor: pointer;
+  }
+
+  .brends
+{
+  
+  
+  /* Rectangle 1333 */
+
+position: absolute;
+width: 100%;
+height: 246px;
+left: 0px;
+top: 2150px;
+
+/* Сoal */
+background: #212526;
+
+
+
+
+
+}
+.nashibrend
+{
+ 
+
+position: absolute;
+width: 234px;
+height: 32px;
+left: 320px;
+top: 70px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+
+
+
+color: #FFFFFF;
+
+
+}
+.brendi
+{
+
+position: absolute;
+width: 1300px;
+height: 110px;
+left: 320px;
+top: 130px;
+
+
+}
+.smallseven
+  {
+   
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 250px;
+    top: 150px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        
+
+
+  }
+  .smallsevenn
+  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1650px;
+    top: 150px;
+        background-color: #dddddd;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: rgb(202, 202, 202);
+        cursor: pointer;
+  }
+  .onas
+  {
+    position: absolute;
+width: 100%;
+height: 640px;
+left: 0px;
+top: 2394px;
+
+/* Сoal */
+background: #ffffff;
+  }
+  .ruki
+  {
+   
+
+position: absolute;
+width: 640px;
+height: 480px;
+left: 320px;
+top: 80px;
+
+background: url(.jpg);
+
+  }
+  .textonas
+  {
+ 
+
+position: absolute;
+width: 97px;
+height: 32px;
+left: 1080px;
+top: 75px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+
+color: #000000;
+
+
+  }
+  .textonasmain
+  {
+   
+
+position: absolute;
+width: 529px;
+height: 164px;
+left: 1081px;
+top: 130px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+
+
+  }
+  .textonasmaintwo
+  {
+    position: absolute;
+width: 529px;
+height: 164px;
+left: 1081px;
+top: 250px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+  }
+  .buttonsecond
+  {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+
+
+position: relative;
+width: 230px;
+height: 50px;
+left: 1081px;
+top: 350px;
+    color: white;
+background-color: #212526;
+border-radius: 5px;
+
+
+ 
+  }
+  .menutwo
+  {
+  
+
+position: absolute;
+width: 100%;
+height: 68px;
+left: 0px;
+top: 3098px;
+
+
+background: #000000;
+
+  }
+  .News
+  {
+  
+
+position: absolute;
+width: 99px;
+height: 24px;
+left: 320px;
+top: 22px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+  }
+  .Ac
+  {
+  
+
+position: absolute;
+width: 72px;
+height: 24px;
+left: 500px;
+top: 22px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 24px;
+
+color: #212526;
+
+
+  }
+  .Prodaji
+  {
+   
+
+position: absolute;
+width: 153px;
+height: 24px;
+left: 635px;
+top: 22px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+line-height: 24px;
+
+color: #212526;
+
+
+  }
+  .novinkas
+  {
+    
+position: absolute;
+width: 100%;
+height: 504px;
+left: 0px;
+top: 3163px;
+
+
+background: #212526;
+
+  }
+  .shetka
+  {
+  
+
+position: absolute;
+width: 310px;
+height: 340px;
+left: -980px;
+top: 1500px;
+background-color: white;
+
+border-radius: 5px;
+
+  }
+  .Emaltwo
+  {
+    position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+background-color: white;
+
+border-radius: 5px;
+  }
+  .chtototwo
+  {
+    position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+background-color: white;
+
+border-radius: 5px;
+  }
+  .benz
+  {
+    position: absolute;
+width: 310px;
+height: 340px;
+left: 330px;
+top: 0px;
+background-color: white;
+
+border-radius: 5px;
+  
+  }
+  .smotretall
+  {
+   
+
+position: absolute;
+width: 134px;
+height: 24px;
+left: 1476px;
+top: 450px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #F05A00;
+
+
+  }
+  .perexod
+  {
+   
+
+position: absolute;
+width: 260px;
+height: 8px;
+left: 831px;
+top: 460px;
+
+
+  }
+  .novosti
+  {
+  
+
+position: absolute;
+width: 100%;
+height: 731px;
+left: 0px;
+top: 3667px;
+
+/* Сoal */
+
+
+
+  }
+  .novostitext
+  {
+  
+
+position: absolute;
+width: 144px;
+height: 32px;
+left: 325px;
+top: 96px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 32px;
+
+color: #000000;
+
+
+  }
+  .newstextt
+  {
+    /* Торговое или промышленное предприятие, торгово-промышленное объединение предпринимателей, форма организации предприятия, при которой его правосубъектность отличается от правосубъектности лиц, в нем участвующих. Компании имеют статус юридического лица. */
+
+position: absolute;
+width: 388px;
+height: 168px;
+left: 325px;
+top: 150px;
+
+/* Text paragraph */
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+/* Black */
+color: #000000;
+
+
+  }
+  .buttonnews
+  {
+ 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 14px 32px;
+gap: 10px;
+
+position: absolute;
+width: 250px;
+height: 50px;
+left: 325px;
+top: 345px;
+color: white;
+background: #F05A00;
+border-radius: 5px;
+
+  }
+  .newsone
+  {
+
+position: absolute;
+width: 420px;
+height: 268px;
+left: 750px;
+top: 90px;
+
+
+  }
+  .firsnews
+  {
+    
+  }
+  .namenov
+  {
+    
+
+position: absolute;
+width: 180px;
+height: 24px;
+left: 0px;
+top: 220px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+  }
+  .data
+  {
+    
+
+position: absolute;
+width: 112px;
+height: 20px;
+left: 0px;
+top: 250px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #000000;
+
+
+  }
+  .newstwo
+  {
+
+
+position: absolute;
+width: 420px;
+height: 268px;
+left: 1200px;
+top: 90px;
+
+
+  }
+  .newsthree
+  {
+    position: absolute;
+width: 420px;
+height: 268px;
+left: 750px;
+top: 400px;
+  }
+  .newsfor
+  {
+    position: absolute;
+width: 420px;
+height: 268px;
+left: 1200px;
+top: 400px;
+  }
+  .copy
+  {
+  
+
+position: absolute;
+width: 100%;
+height: 332px;
+top: 4398px;
+
+
+background: #212526;
+
+  }
+  .textfirst
+  {
+   
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 177px;
+height: 200px;
+left: 420px;
+top: 60px;
+
+
+  }
+  .Malyartovar
+  {
+    position: absolute;
+top: 10px;
+width: 139px;
+height: 20px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  .electroob
+  {
+
+    position: absolute;
+    top: 45px;
+
+
+width: 177px;
+height: 20px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+  }
+  .specod
+  {
+   
+    position: absolute;
+    top: 80px;
+
+width: 98px;
+height: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+flex: none;
+order: 2;
+flex-grow: 0;
+
+  }
+  .dlyadoma
+  {
+    position: absolute;
+    top: 115px;
+
+width: 126px;
+height: 20px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+flex: none;
+order: 3;
+flex-grow: 0;
+
+  }
+  .sezon
+  {
+    position: absolute;
+    top: 150px;
+
+width: 75px;
+height: 20px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+flex: none;
+order: 4;
+flex-grow: 0;
+
+  }
+  .strum
+  {
+    position: absolute;
+    top: 185px;
+
+width: 94px;
+height: 20px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+
+flex: none;
+order: 5;
+flex-grow: 0;
+
+  }
+  .texttwow
+ {
+  /* Frame 496 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 96px;
+height: 164px;
+left: 860px;
+top: 60px;
+
+
+ }
+ .textthres
+ {
+ /* Название новости */
+
+position: absolute;
+width: 240px;
+height: 252px;
+left: 1300px;
+top: 60px;
+
+ }
+ .tel
+ {
+
+
+position: absolute;
+bottom: 160px;
+width: 138px;
+height: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+ }
+ .telsec
+ {
+
+
+position: absolute;
+bottom: 130px;
+width: 138px;
+height: 20px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+
+color: #FFFFFF;
+
+
+ }
+ .vse
+ {
+  /* Group 427 */
+
+position: absolute;
+left: 0%;
+right: 24.79%;
+top: 57.53%;
+bottom: 32.83%;
+
+
+ }
+ .copp
+ {
+ 
+
+position: absolute;
+left: 0%;
+width: 197px;
+height: 16px;
+right: 22.03%;
+top: 86%;
+bottom: 13.55%;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+
+
+ }
+ .soglas
+ {
+  
+
+position: absolute;
+width: 197px;
+height: 16px;
+left: 0%;
+right: 23.02%;
+top: 77%;
+bottom: 20.78%;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #FFFFFF;
+
+
+ }
